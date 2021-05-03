@@ -62,10 +62,8 @@ nav a {
 
 /* Hero */
 .hero {
-  display: grid;
+  text-align: center;
 }
-
-.hero img {
+.hero > img {
   width: 80%;
-  align-self: center;
 }
