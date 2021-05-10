@@ -63,6 +63,47 @@ nav a {
   border-bottom: solid 1px var(--secondary-color);
 }
 
+@media (max-width: 600px) {
+  .links-container {
+    display: none;
+  }
+}
+
+/* HAMBURGER MENU */
+
+.hamburger-menu {
+  position: relative;
+}
+
+.menu-content {
+  position: absolute;
+  right: 0;
+  background-color: var(--primary-color);
+  min-width: 12rem;
+  padding: 20px;
+  z-index: 1;
+  display: none;
+}
+
+.hamburger-menu:hover .menu-content {
+  display: block;
+}
+
+.hamburger-menu li {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.menu-content a:hover {
+  color: var(--secondary-color);
+}
+
+@media (min-width: 600px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+
 /* HOME */
 
 .grid-container {
@@ -79,6 +120,7 @@ header {
 
 main {
   grid-area: main;
+  padding: 40px 40px;
 }
 
 footer {
@@ -107,4 +149,41 @@ footer a {
 
 footer p {
   margin: 20px 0px;
+}
+
+/* Education and experience */
+.container-one {
+  display: flex;
+  flex-direction: row;
+  margin: 40px 0;
+}
+
+.education {
+  flex: 0.5;
+  margin-right: 20px;
+}
+
+.experience {
+  flex: 0.5;
+  margin-left: 20px;
+}
+
+.strengths {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.strengths li {
+  list-style: none;
+}
+
+.personal-information {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.personal-information p {
+  width: 50%;
 }
